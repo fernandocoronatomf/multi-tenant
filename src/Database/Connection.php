@@ -244,7 +244,7 @@ class Connection
      * @param string|null $path
      * @return bool
      */
-    public function migrate($for, string ?$path = null): bool
+    public function migrate($for, ?string $path = null): bool
     {
         $website = $this->convertWebsiteOrHostnameToWebsite($for);
 
